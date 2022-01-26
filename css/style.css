@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Seccion Home */
+/* aplicando Grid */
+.grilla1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "contenido" "footer";
+  width: 100%;
+  height: 100vh; }
+
+.header {
+  grid-area: header; }
+
+.contenido {
+  grid-area: contenido;
+  height: 60vh; }
+
+.footer {
+  grid-area: footer; }
+
+main video {
+  width: 100vw; }
+
+main p {
+  width: 94vw;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0.6rem;
+  word-spacing: 0.1rem; }
+
+main section .container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0.1rem;
+  align-items: center;
+  width: 99vw; }
+  main section .container div {
+    flex-direction: column; }
+    main section .container div h4 {
+      text-align: center;
+      color: #142850;
+      font-size: 1.1rem;
+      font-style: italic;
+      font-weight: 600;
+      margin: 0.1rem 0.2rem; }
+    main section .container div h3 {
+      text-align: center;
+      margin: 0.1rem 0.1rem;
+      padding: 0.1rem;
+      word-spacing: 0.4rem;
+      font-size: 1.5rem;
+      color: #142850; }
+    main section .container div p {
+      text-align: center;
+      margin: 0.5rem 0.4rem;
+      padding: 0.2rem;
+      word-spacing: 0.2rem;
+      line-height: 1.3rem; }
+  main section .container img {
+    width: 300px;
+    height: 200px;
+    margin: 0.1rem 0.1rem;
+    padding: 0.1rem;
+    box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+    -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+    -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49); }
+
+main section .containerReverse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0.1rem;
+  width: 99vw; }
+  main section .containerReverse div {
+    flex-direction: column; }
+    main section .containerReverse div h4 {
+      text-align: center;
+      color: #142850;
+      font-size: 1.1rem;
+      font-style: italic;
+      font-weight: 600;
+      margin: 0.1rem 0.2rem; }
+    main section .containerReverse div h3 {
+      text-align: center;
+      margin: 0.1rem 0.1rem;
+      padding: 0.1rem;
+      word-spacing: 0.4rem;
+      font-size: 1.5rem;
+      color: #142850; }
+    main section .containerReverse div p {
+      text-align: center;
+      margin: 0.5rem 0.4rem;
+      padding: 0.2rem;
+      word-spacing: 0.2rem;
+      line-height: 1.3rem; }
+  main section .containerReverse img {
+    width: 300px;
+    height: 200px;
+    margin: 0.1rem 0.1rem;
+    padding: 0.1rem;
+    box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+    -webkit-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
+    -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49); }
+
+@media (min-width: 1440px) {
+  main {
+    width: 99vw;
+    margin: 0; }
+    main .parrafo__inicial {
+      width: 85%;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 1.5rem auto;
+      word-spacing: 0.2rem; }
+    main section .container {
+      display: flex;
+      flex-direction: row;
+      width: 92vw;
+      margin: 3rem;
+      align-items: center; }
+      main section .container div {
+        flex-direction: column;
+        margin-left: 5rem; }
+        main section .container div h4 {
+          text-align: left;
+          font-size: 1.2rem;
+          font-style: italic;
+          font-weight: 600;
+          margin: 0.2rem 0.5rem 0.2rem 4rem; }
+        main section .container div h3 {
+          text-align: left;
+          margin: 0.2rem 0.5rem 0.1rem 4rem;
+          padding: 0.1rem;
+          word-spacing: 0.5rem;
+          font-size: 2rem; }
+        main section .container div p {
+          text-align: justify;
+          width: 60%;
+          margin: 3rem 0.5rem 3rem 4rem;
+          padding: 0.2rem;
+          text-align: justify;
+          word-spacing: 0.3rem;
+          line-height: 2.5rem; }
+      main section .container img {
+        width: 900px;
+        height: 400px;
+        margin: 2rem 4rem 2rem 0.5rem;
+        padding: 0.1rem; }
+    main section .containerReverse {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 90vw;
+      margin: 3rem 0.5rem 3rem 3rem;
+      align-items: center; }
+      main section .containerReverse div {
+        flex-direction: column;
+        margin-right: 5rem; }
+        main section .containerReverse div h4 {
+          text-align: left;
+          font-size: 1.2rem;
+          font-style: italic;
+          font-weight: 600;
+          margin: 0.2rem 4rem 0.2rem 14rem; }
+        main section .containerReverse div h3 {
+          text-align: left;
+          margin: 0.2rem 4rem 0.1rem 14rem;
+          padding: 0.1rem;
+          word-spacing: 0.5rem;
+          font-size: 2rem; }
+        main section .containerReverse div p {
+          text-align: justify;
+          width: 60%;
+          margin: 3rem 4rem 3rem 14rem;
+          padding: 0.2rem;
+          text-align: justify;
+          word-spacing: 0.3rem;
+          line-height: 2.5rem; }
+      main section .containerReverse img {
+        width: 900px;
+        height: 400px;
+        margin: 2rem 8rem 2rem 5rem;
+        padding: 0.1rem; } }
+
+.header {
+  background-color: #00909E;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw; }
+  .header .logo {
+    width: 80px;
+    height: 45px;
+    margin: 0.5rem 2.5rem;
+    border-radius: 500px; }
+  .header nav .nav__links {
+    display: flex;
+    align-items: center; }
+    .header nav .nav__links li {
+      display: inline-block;
+      position: relative;
+      margin: 0.2rem;
+      font-size: 0.8rem;
+      font-weight: 300;
+      padding: 0.1rem; }
+      .header nav .nav__links li a {
+        color: #fff;
+        text-decoration: none;
+        list-style: none; }
+      .header nav .nav__links li ul {
+        position: absolute;
+        display: none; }
+        .header nav .nav__links li ul li {
+          display: block; }
+      .header nav .nav__links li:hover ul {
+        display: block;
+        background-color: #00909E;
+        border: solid; }
+
+@media (min-width: 768px) {
+  .nav__links li {
+    font-size: 1.5rem; } }
+
+@media (min-width: 1440px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .header .logo {
+      width: 150px;
+      height: 100px;
+      margin: 0.5rem 2.5rem;
+      border-radius: 500px; }
+    .header .nav__links {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 12rem; }
+      .header .nav__links li {
+        display: inline-block;
+        position: relative;
+        margin: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 600; } }
+
+.footer {
+  background-color: #00909E;
+  display: flex;
+  flex-direction: column;
+  margin-top: 260vh;
+  width: 99vw;
+  padding: 1rem 0rem 2rem 0rem; }
+  .footer div {
+    margin: 1rem 0rem;
+    width: 99vw;
+    text-align: center;
+    border-bottom: solid #fff 1px; }
+    .footer div h3 {
+      width: 99vw;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      color: #fff; }
+    .footer div ul {
+      list-style: none;
+      color: #fff;
+      padding-top: 0.5rem;
+      display: none; }
+      .footer div ul li {
+        padding-bottom: 1rem; }
+    .footer div p {
+      color: #fff;
+      margin-top: 1rem;
+      display: none; }
+    .footer div iframe {
+      border-radius: 0.2rem;
+      margin-top: 0.5rem;
+      display: none; }
+    .footer div:hover ul {
+      display: block; }
+    .footer div:hover p {
+      display: block; }
+  .footer .container__footer--active {
+    margin: 1rem 0rem;
+    text-align: center;
+    border-bottom: solid #fff 1px; }
+    .footer .container__footer--active form {
+      display: none; }
+      .footer .container__footer--active form .input__suscrib {
+        margin: 0.5rem 0rem 0.5rem 3rem;
+        width: 50%;
+        background-color: #00909E;
+        color: #fff;
+        border: none;
+        border-bottom: solid 1.5px #142850;
+        outline: none;
+        font-family: 'Poppins', sans-serif; }
+        .footer .container__footer--active form .input__suscrib ::placeholder {
+          color: #fff; }
+      .footer .container__footer--active form .input__enviar {
+        background-color: #142850;
+        color: #fff;
+        border-radius: 0.3rem;
+        font-weight: 200;
+        margin: 1rem;
+        border: #142850 2px;
+        width: 5rem;
+        height: 2rem;
+        font-family: 'Poppins', sans-serif; }
+        .footer .container__footer--active form .input__enviar:hover {
+          background-color: #27496D; }
+    .footer .container__footer--active .fab {
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0.5rem;
+      display: none; }
+    .footer .container__footer--active:hover form {
+      display: block; }
+
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 220vh; } }
+
+@media (min-width: 1440px) {
+  .footer {
+    width: 100vw;
+    background-color: #00909E;
+    display: flex;
+    flex-direction: row;
+    margin-top: 350vh;
+    align-items: stretch;
+    justify-content: space-between; }
+    .footer div {
+      margin: 2rem;
+      padding: 0.5rem 4rem;
+      border-bottom: none;
+      text-align: left; }
+      .footer div h3 {
+        width: 60%;
+        font-weight: 600;
+        margin: 0.5rem;
+        letter-spacing: 0.1rem; }
+      .footer div ul {
+        margin: 0.5rem;
+        display: block; }
+      .footer div p {
+        margin-left: 0.5rem;
+        display: block; }
+      .footer div iframe {
+        margin: 1.5rem 0.5rem;
+        display: block; }
+    .footer .container__footer--active {
+      margin: 2rem;
+      padding: 0.5rem 4rem 0.5rem 8rem;
+      border-bottom: none;
+      text-align: left; }
+      .footer .container__footer--active form {
+        display: flex; }
+        .footer .container__footer--active form .input__suscrib {
+          margin: 0.5rem;
+          width: 11vw; }
+        .footer .container__footer--active form .input__enviar {
+          margin: 1rem 2rem; }
+      .footer .container__footer--active .fab {
+        font-size: 2rem; } }
